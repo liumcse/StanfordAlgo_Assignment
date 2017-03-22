@@ -73,7 +73,7 @@ class Digraph {
 class Solver {
     //  Run DFS on G(Reversed) to get "reversePostOrder of G(Reversed)"
     //  Run DFS through on G through reversePostOrder of "G(Reversed)" to compute SCC
-    //  Since input is pretty large, put -Xss10m as VM options
+    //  Since input may be pretty large, put -Xss10m as VM options to avoid StackOverflowError
 
     private Stack<Integer> order;
     private boolean[] marked;
