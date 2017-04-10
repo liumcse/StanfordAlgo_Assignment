@@ -1,4 +1,7 @@
+package Assignment1;
+
 import edu.princeton.cs.algs4.In;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Stack;
@@ -73,7 +76,7 @@ class Digraph {
 class Solver {
     //  Run DFS on G(Reversed) to get "reversePostOrder of G(Reversed)"
     //  Run DFS through on G through reversePostOrder of "G(Reversed)" to compute SCC
-    //  Since input may be pretty large, put -Xss10m as VM options to avoid StackOverflowError
+    //  Since input is pretty large, put -Xss10m as VM options
 
     private Stack<Integer> order;
     private boolean[] marked;
